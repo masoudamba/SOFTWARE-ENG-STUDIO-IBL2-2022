@@ -4,7 +4,7 @@ class LoginUser
 {
   public $password;
 
-public function loginUser(string $password)
+public function setPassword(string $password)
    {
     $this->password = $password;
    }

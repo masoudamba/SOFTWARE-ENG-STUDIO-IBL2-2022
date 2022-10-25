@@ -11,7 +11,7 @@ class LoggingInTest extends \PHPUnit\Framework\TestCase
 public function testPasswswordLength()
    {
     $password = new LoginUser;
-    $password->passwordLength("Tuk13353523");
+    $password->setPassword("Tuk13353523");
     $this->assertEquals("weak", $password->checkPasswordLength());
    }
 }
