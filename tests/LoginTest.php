@@ -12,6 +12,6 @@ public function testPasswswordLength()
    {
     $password = new LoginUser;
     $password->setPassword("hh");
-    $this->assertEquals("weak", $password->checkPasswordLength());
+    $this->assertEquals("strong", $password->checkPasswordLength());
    }
 }
