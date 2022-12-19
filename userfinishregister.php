@@ -1,11 +1,20 @@
+<?php 	require_once('connect.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Laundry Services</title>
+  <title>laundry Sevices</title>
+    <link rel="stylesheet" type="text/css" href="stylesbackup1.css">
+    <link rel="shortcut icon" href="images/download.png"/>
+    <style>
+    .navactive {
+        color: white;
+        background-color: #bcb562;
+    }
+    </style>
   </head>
   <div class="header">
     <div class="logoWrapper">
-      <img class="logo" src="BNN.png" border="0" />
+      <img class="logo" src="images/download.png" border="0" />
       <div class="topnav">
         <a href="usersignin.php">Log in</a>
         <a href="userregister.php">Sign up</a>
@@ -14,9 +23,52 @@
     </div>
 
   </div>
-  <body> 
-  <footer>
-  <div class="footerContent">
+  <body>
+
+    <div class="registerContent">
+      <div class="registerDiv">
+        <?php
+				if(isset($_POST['userRegisterSubmit'])) {
+          // $status = $_POST["status"];
+          $firstName = $_POST['firstName'];
+          $lastName = $_POST['lastName'];
+          $gender = $_POST['gender'];
+          $mobileNo = $_POST['mobileNo'];
+          $address = $_POST['address'];
+          $email = $_POST['email'];
+          $password= $_POST['password'];
+          $rePassword =$_POST['rePassword'];
+          $memberUserId = $_POST['userId'];
+
+
+
+          if($password==$rePassword){
+            $password = md5($_POST["password"]);
+            $q="INSERT INTO MEMBER (firstName,lastName,mobileNo,address,memberTypeId,bonusPoint,email,memberUserId,password,gender)
+            VALUES ('$firstName','$lastName','$mobileNo','$address','1','0','$email','$memberUserId','$password','$gender')";
+            $result=$mysqli->query($q);
+            if(!$result){
+              echo "INSERT failed. Error: ".$mysqli->error ;
+              // break;
+            }
+            header("Refresh: 2; url=usermanagement.php");
+            echo '<h1 style="text-align: center; font-family: monospace;">REGISTER DONE!.<h1>';
+          }
+          else{
+              header("Refresh: 2; url=usermanagement.php");
+            echo "<h1>Password does not match!</h1>";
+          }
+
+				}
+			?>
+
+      </div>
+    </div>
+      <div class="regisImageWrapper">
+        <img src="images/regis.jpg" alt="">
+      </div>
+      <footer>
+    <div class="footerContent">
       <div class="logoWrapper">
         <img class="logo" src="images/download.png" border="0" />
       </div>

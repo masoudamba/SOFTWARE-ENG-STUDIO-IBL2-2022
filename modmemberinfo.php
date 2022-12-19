@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ITS351_PROJECT</title>
+  <title>laundry Sevices</title>
     <link rel="stylesheet" type="text/css" href="stylesbackup1.css">
+    <link rel="shortcut icon" href="images/download.png"/>
     <style>
     .navactive {
         color: white;
@@ -13,7 +14,7 @@
   </head>
   <div class="header">
     <div class="logoWrapper">
-      <img class="logo" src="BNN.png" border="0" />
+      <img class="logo" src="images/download.png" border="0" />
       <div class="topnav">
         <a href="staffsignin.php">Log in</a>
         <a href="staffregister.php">Sign up</a>
@@ -77,22 +78,25 @@
       </div>
     </div>
       <div class="regisImageWrapper">
-        <img src="regis.jpg" alt="">
+        <img src="images/regis.jpg" alt="">
       </div>
 
-  <footer>
+      <footer>
     <div class="footerContent">
+      <div class="logoWrapper">
+        <img class="logo" src="images/download.png" border="0" />
+      </div>
       <div class="leftFooter">
-        <h1 id="followUs">Follow us . . </h1>
+        <h1 id="followUs">Follow Me on. . </h1>
         <div class="iconWrapper">
           <a href="https://www.facebook.com/">
-            <img class="socialIcon" src="facebook.png" border="0" />
+            <img class="socialIcon" src="images/facebook.png" border="0" />
           </a>
           <a href="https://www.instagram.com/">
-            <img class="socialIcon" src="ig.png" border="0" />
+            <img class="socialIcon" src="images/ig.jpg" border="0" />
           </a>
           <a href="https://twitter.com/">
-            <img class="socialIcon" src="twitter.png" border="0" />
+            <img class="socialIcon" src="images/twitter.png" border="0" />
           </a>
         </div>
       </div>
@@ -102,9 +106,8 @@
         </div>
         <div class="nameList">
           <ul id="name">
-            <li>Chanthana Bunchongpru</li>
-            <li>Chalita Martangka</li>
-            <li>Arnold Kumpeera</li>
+            <li>Otieno Amba</li>
+           
           </ul>
 
         </div>

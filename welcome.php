@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>laundry Services</title>
+    <title>laundry Sevices</title>
     <link rel="stylesheet" type="text/css" href="stylesbackup1.css">
     <link rel="shortcut icon" href="images/download.png"/>
 
@@ -32,6 +32,10 @@
             </div>
           </a>
       </div>
+      <!-- <div class="guest">
+        <h3>Guest</h3>
+
+      </div> -->
     </div>
 
     </div>
